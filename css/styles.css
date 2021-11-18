@@ -125,10 +125,25 @@ img {
   margin-right: 50px;
 }
 
+.nav-icon-mail {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.nav-icon-phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .contact-nav {
+  align-items: center;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
@@ -145,31 +160,37 @@ img {
   border-bottom: 1px solid var(--nav-border-color);
 }
 
+/* .list-nav .item {
+  /* display: flex; */
+/* align-items: center;
+}
 .contact-nav.mail::before {
-  display: inline-flex;
-  align-content: center;
   content: '';
+  align-items: center;
+
+  display: inline-flex;
   margin-right: 10px;
   width: 16px;
   height: 12px;
   color: var(--primary-text-color);
   background-image: url(../icons/envelope.svg);
-}
-.contact-nav.mail:hover::before {
+} */
+
+/* .contact-nav.mail:hover::before {
   color: var(--accent-color);
   display: inline-block;
-}
+} */
 
-.contact-nav.phone::before {
+/* .contact-nav.phone::before {
   display: inline-flex;
-  /* align-items: center; */
+  align-items: center;
   content: '';
   margin-right: 10px;
   width: 10px;
   height: 16px;
   color: var(--primary-text-color);
   background-image: url(../icons/phone.svg);
-}
+} */
 
 /*------------------------------------------------------- Секция hero ----------------------------------------*/
 .hero {
@@ -245,30 +266,24 @@ img {
 .feature-list .item::before {
   display: block;
   content: '';
-  width: 270px;
   height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--primary-button-color);
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 .icon-antenna::before {
   background-image: url(../icons/icon-antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .icon-clock::before {
   background-image: url(../icons/icon-clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .icon-diagram::before {
   background-image: url(../icons/icon-diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .icon-astronaut::before {
   background-image: url(../icons/icon-astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .feature-list .item {
